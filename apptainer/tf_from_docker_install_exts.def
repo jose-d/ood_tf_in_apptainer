@@ -1,0 +1,21 @@
+Bootstrap: localimage
+From: tf_from_docker.sif
+
+%post
+
+  apt install -y build-essential 
+
+  python3.11 -m pip install ipython matplotlib pycodestyle python-lsp-server widgetsnbextension rope ipympl jupyter-ydoc yapf toml markdown-it-py jupyterlab-lsp jupyterlab matplotlib matplotlib-inline mccabe
+  python3.11 -m pip install cupy-cuda12x
+  python3.11 -m pip install opencv-python
+  python3.11 -m pip install torch torchvision torchaudio
+  python3.11 -m pip install pyopencl
+
+  curl -fsSL https://install.julialang.org | sh -s -- -y
+  
+
+
+
+
+
+  
