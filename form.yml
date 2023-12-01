@@ -9,9 +9,9 @@ attributes:
           label: Container version
           widget: select
           options:
-                  - [ "2023-12-1","/sw/phoebe/cont/tf_2023-12-1_1233.sif" ]
+                  - [ "20231201_1233","/sw/phoebe/cont/tf_2023-12-1_1233.sif" ]
           help: |
-                  TBF
+                  The container version corresponds to the time and date of its build.
 
   num_hours:
           label: Session duration

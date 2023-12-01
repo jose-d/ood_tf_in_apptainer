@@ -5,3 +5,5 @@ subcategory: Servers
 role: batch_connect
 description: |
   This app will launch a JupyterLab instance on GPU node based on official TensorFlow docker image.
+  Besides Tensorflow, container contains cupy, pytorch, matplotlib, and other useful software.
+  Image is top of Tensorflow official Docker image.
