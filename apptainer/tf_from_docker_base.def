@@ -1,0 +1,16 @@
+Bootstrap: docker
+from: tensorflow/tensorflow:{{ TAGS }}
+
+%arguments
+  TAGS=latest-gpu
+
+%help
+  This apptainer recipe converts tensorflow docker image 
+  (https://hub.docker.com/r/tensorflow/tensorflow/)
+  into Apptainer image.
+
+%post
+  echo done..
+
+%test
+  python3 -c'import tensorflow;print("testDone")'

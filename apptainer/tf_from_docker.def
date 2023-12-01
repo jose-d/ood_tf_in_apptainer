@@ -1,6 +1,0 @@
-Bootstrap: docker
-from: tensorflow/tensorflow:latest-gpu
-
-%post
-  echo done..
-

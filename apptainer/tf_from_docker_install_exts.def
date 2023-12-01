@@ -1,5 +1,8 @@
 Bootstrap: localimage
-From: tf_from_docker.sif
+From: tf_from_docker_base.sif
+
+%help
+	Installs common pip libraries and some friends of Jupyter into apptainer image
 
 %post
 
@@ -12,10 +15,3 @@ From: tf_from_docker.sif
   python3.11 -m pip install pyopencl
 
   curl -fsSL https://install.julialang.org | sh -s -- -y
-  
-
-
-
-
-
-  
