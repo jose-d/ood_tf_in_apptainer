@@ -1,5 +1,7 @@
 ## build base image
 
+This apptainer image is based on https://hub.docker.com/r/tensorflow/tensorflow/ docker image.
+
 (sudo needed?)
 
 ```
