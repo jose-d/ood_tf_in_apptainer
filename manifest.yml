@@ -1,0 +1,7 @@
+---
+name: Tensorflow official container
+category: Interactive Apps
+subcategory: Servers
+role: batch_connect
+description: |
+  This app will launch a JupyterLab instance on GPU node with selected toolchain generation.

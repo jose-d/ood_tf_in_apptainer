@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# SITE-SPECIFIC setup:
+
+# Benchmark info
+echo "TIMING - Starting main script at: $(date)"
+
+# Set working directory to home directory
+cd "${HOME}"
+
+# activate jupyter venv:
+
+apptainer exec --nv <%= context.container %> jupyter lab --config="${CONFIG_FILE}" <%= context.extra_jupyter_args %>
+
